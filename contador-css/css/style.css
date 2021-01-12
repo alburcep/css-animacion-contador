@@ -1,0 +1,52 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2{
+  color: red;
+  font-size: 5em;
+  font-weight: normal;
+}
+
+#porcentaje::after {
+  content: counter(num);
+  animation: porciento 5s linear infinite;
+ }
+  
+ @keyframes porciento {
+  0% {
+    counter-increment: num 0;
+  }
+  10% {
+    counter-increment: num 10;
+  }
+  20% {
+    counter-increment: num 20;
+  }
+  30% {
+    counter-increment: num 30;
+  }
+  40% {
+    counter-increment: num 40;
+  }
+  50% {
+    counter-increment: num 50;
+  }
+  60% {
+    counter-increment: num 60;
+  }
+  70% {
+    counter-increment: num 70;
+  }
+  80% {
+    counter-increment: num 80;
+  }
+  90% {
+    counter-increment: num 90;
+  }
+  100% {
+    counter-increment: num 100;
+  }
+}
